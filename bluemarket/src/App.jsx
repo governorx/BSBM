@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Topbar from './components/Topbar.jsx';
 
 function App() {
   return (
     <div className="App">
+            <Topbar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
