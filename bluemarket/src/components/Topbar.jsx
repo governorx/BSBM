@@ -18,11 +18,11 @@ export default class Topbar extends Component {
     * with the database and grab data from the search bar.
     */
     search() {
-        // TODO: Impliment search
-        alert("SEARCH NOT IMPLIMENTED" );
+        // TODO: Implement search
+        alert("SEARCH NOT IMPLEMENTED");
     }
-    handleSearchKeyChange(e){
-        this.setState({search_key: e.target.value});
+    handleSearchKeyChange(e) {
+        this.setState({ search_key: e.target.value });
     }
     render() {
         // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
@@ -43,7 +43,7 @@ export default class Topbar extends Component {
                         </NavDropdown>
                     </Nav>
                     <Form inline>
-                        <FormControl type="text" placeholder="Search Blue Market" className="mr-sm-2"/>
+                        <FormControl type="text" placeholder="Search Blue Market" className="mr-sm-2" />
                         {/* Below is an example of how functions are called in jsx, this.search signifies that we are
                         using the search function written above, and binding search to this
                         is an syntax requirement for javascript to know when to call the function.

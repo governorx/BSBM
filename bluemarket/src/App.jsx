@@ -6,7 +6,7 @@ import Topbar from './components/Topbar.jsx';
 function App() {
   return (
     <div className="App">
-            <Topbar/>
+      <Topbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,5 +24,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
