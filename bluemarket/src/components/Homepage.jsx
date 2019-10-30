@@ -7,7 +7,7 @@
 */
 
 import React, { Component } from 'react';
-import logo from '../ogdenhall.svg';
+import background from '../images/ogdenhall.svg';
 import '../App.css';
 export default class Homepage extends Component {
 
@@ -15,9 +15,9 @@ export default class Homepage extends Component {
             return (
                 <div>
                     {/* Get ogden image from svg file */}
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={background} className="Background-orientation" alt="background" />
                     {/* Display and format homepage text */}
-                    <div className="App-image-text">Welcome to Blue Market</div>
+                    <div className="Background-text">Welcome to Blue Market</div>
                 </div>
             )
     }
