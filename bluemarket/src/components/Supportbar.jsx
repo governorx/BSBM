@@ -1,0 +1,19 @@
+// Imports
+import React, { Component } from 'react'; // Import neccesary for all components
+// react-bootstrap was imported to make it easier to make flexible GUI components see https://react-bootstrap.github.io
+import { Navbar, Nav } from 'react-bootstrap';
+export default class Topbar extends Component {
+  render() {
+    // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
+    return (
+        <Navbar fixed="bottom" bg="light" expand="lg">
+            <Navbar.Brand href="#home">Blue Market</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Nav className="mr-auto">
+                    <Nav.Link href="#home">Contact</Nav.Link>
+                    <Nav.Link href="#link">Policy</Nav.Link>
+                </Nav>
+        </Navbar>
+    );
+}
+}
