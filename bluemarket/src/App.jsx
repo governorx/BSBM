@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Topbar from './components/Topbar.jsx';
 import Supportbar from './components/Supportbar';
 import './App.css';
+import Topbar from './components/Topbar.jsx';
 
 function App() {
   return (
@@ -26,5 +27,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
