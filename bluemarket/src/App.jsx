@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import Topbar from './components/Topbar.jsx';
+import Categories from './components/Categories.jsx';
 import Homepage from './components/Homepage';
 import Supportbar from './components/Supportbar';
 
@@ -15,8 +16,8 @@ function App() {
     <div className="App">
             <Topbar/>
             <Homepage/>
-              <Supportbar/>
-
+            <Categories/>
+            <Supportbar/>
     </div>
   );
 }
