@@ -1,0 +1,44 @@
+.Background-context {
+    position: relative;
+    width: 100%;
+}
+
+.Background-orientation {
+    height: 100%;
+    width: 100%;
+}
+
+.Background-text {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font: bolder 75px/1 sans-serif;
+    color: white;
+}
+
+.App-link {
+    color: #09d3ac;
+}
+
+
+/* Create two equal columns that sits next to each other */
+
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.category-box {
+    width: 100%;
+}
