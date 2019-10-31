@@ -27,7 +27,7 @@ export default class Topbar extends Component {
     render() {
         // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
         return (
-            <Navbar bg="light" expand="lg">
+            <Navbar fixed="top" bg="light" expand="lg">
                 <Navbar.Brand href="#home">Blue Market</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

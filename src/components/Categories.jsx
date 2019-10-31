@@ -12,21 +12,21 @@ export default class Categories extends Component {
     render() {
 
         return (
-           
-           <div class="row">
-                <div class="column">
-                    <img class="category-box" src= {clearance}/>
-                    <img class="category-box" src={community} />
-                </div> 
-                <div class="column">
-                <img class="category-box" src={academics} /> 
-                <img class="category-box" src={jobsearch} /> 
+
+            <div className="row">
+                <div className="column">
+                    <img className="category-box" src={clearance} alt="clearance"/>
+                    <img className="category-box" src={community} alt="community"/>
                 </div>
-                <div class="column">
-                <img class="category-box" src={furniture} />
-                <img class="category-box" src={housing} /> 
+                <div className="column">
+                    <img className="category-box" src={academics} alt="academics"/>
+                    <img className="category-box" src={jobsearch} alt="jobsearch"/>
                 </div>
+                <div className="column">
+                    <img className="category-box" src={furniture} alt="furniture"/>
+                    <img className="category-box" src={housing} alt="housing"/>
                 </div>
+            </div>
 
 
         );

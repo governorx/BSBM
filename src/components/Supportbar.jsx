@@ -6,7 +6,7 @@ export default class Topbar extends Component {
   render() {
     // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="mr-auto">
                     <Nav.Link href="#link">Contact</Nav.Link>

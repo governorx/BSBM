@@ -12,13 +12,13 @@ import '../App.css';
 export default class Homepage extends Component {
 
     render() {
-            return (
-                <div>
-                    {/* Get ogden image from svg file */}
-                    <img src={background} className="Background-orientation" alt="background" />
-                    {/* Display and format homepage text */}
-                    <div className="Background-text">Welcome to Blue Market</div>
-                </div>
-            )
+        return (
+            <div>
+                {/* Get ogden image from svg file */}
+                <img src={background} className="Background-orientation" alt="background" />
+                {/* Display and format homepage text */}
+                <div className="Background-text">Welcome to Blue Market</div>
+            </div>
+        )
     }
 }
