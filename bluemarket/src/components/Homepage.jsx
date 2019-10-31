@@ -1,4 +1,4 @@
-/*
+/* 
 * Homepage.jsx -- Homepage for the Blue Market App
 * Below are the necessary import statements for the
 * components used in the code. Note ogedenhall.svg
