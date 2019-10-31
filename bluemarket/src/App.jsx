@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Topbar from './components/Topbar.jsx';
 import Homepage from './components/Homepage';
+import Supportbar from './components/Supportbar';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
     <div className="App">
             <Topbar/>
             <Homepage/>
+              <Supportbar/>
+
     </div>
   );
 }
