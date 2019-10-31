@@ -14,10 +14,9 @@ it('Should Render Topbar without crashing', () => {
   unmountComponentAtNode(div);
 });
 
-it('Should link to #home', () => {
+it('Should Render all of the Topbar props', () => {
   const wrapper = shallow(<Topbar />);
-  console.log(wrapper.find(Nav).at(0).props().children[2].props.children)
   expect(wrapper.find(Nav).at(0).props().children[0].props.href).toBe('#home');
   expect(wrapper.find(Nav).at(0).props().children[1].props.href).toBe('#link');
-  expect(wrapper.find(Nav).at(0).props().children[2].props.children).toBe('#link');
+  expect(wrapper.find(Nav).at(0).props().children[2].props.children).toHaveLength(5);
 });
