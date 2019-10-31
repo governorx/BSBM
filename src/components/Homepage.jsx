@@ -13,7 +13,7 @@ export default class Homepage extends Component {
 
     render() {
         return (
-            <div>
+            <div className="Background-container">
                 {/* Get ogden image from svg file */}
                 <img src={background} className="Background-orientation" alt="background" />
                 {/* Display and format homepage text */}
