@@ -1,19 +1,21 @@
-.Background-context {
+.Background {
     position: relative;
     width: 100%;
 }
 
-.Background-orientation {
+.Background .image {
     height: 100%;
     width: 100%;
+    filter: brightness(40%) blur(3px) contrast(90%);
 }
 
-.Background-text {
+.Background .text {
     position: absolute;
-    top: 15%;
     width: 100%;
+    height: 100%;
+    top: 15vw;
     text-align: center;
-    font: bolder 75px/1 sans-serif;
+    font: bolder 8vw sans-serif;
     color: white;
 }
 
@@ -29,8 +31,8 @@
 
 .column {
     float: left;
-    width: 33.3%;
-    padding: 10px;
+    width: 33.3vw;
+    height: 66.6vw;
 }
 
 .row:after {
@@ -40,5 +42,6 @@
 }
 
 .category-box {
-    width: 100%;
+    width: 33.3vw;
+    height: 33.3vw;
 }

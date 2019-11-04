@@ -13,11 +13,11 @@ export default class Homepage extends Component {
 
     render() {
         return (
-            <div className="Background-container">
+            <div className="Background">
                 {/* Get ogden image from svg file */}
-                <img src={background} className="Background-orientation" alt="background" />
+                <img src={background} className="image" alt="background" />
                 {/* Display and format homepage text */}
-                <div className="Background-text">Welcome to Blue Market</div>
+                <div className="text">Welcome to Blue Market</div>
             </div>
         )
     }
