@@ -13,7 +13,7 @@ export default class Banner extends Component {
 
     render() {
         return (
-            <div className="Background">
+            <div className="Banner">
                 {/* Get ogden image from svg file */}
                 <img src={background} className="image" alt="background" />
                 {/* Display and format Banner text */}

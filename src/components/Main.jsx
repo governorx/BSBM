@@ -5,12 +5,16 @@ import '../App.css';
 export default class Main extends Component {
 
     render() {
+        /** props is a store of all of he variables and 
+        functions passed from the parent component */
         console.log(this.props.page);
         switch (this.props.page) {
             case 'home':
                 return (
                     <div>
                         <Banner />
+                        {/** Categories will need to be able to change what page we 
+                          see so it is also passed the function changePage */}
                         <Categories changePage={this.props.changePage.bind(this)} />
                     </div>
                 )

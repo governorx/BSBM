@@ -22,13 +22,13 @@ export default class Topbar extends Component {
         alert("SEARCH NOT IMPLEMENTED");
         this.props.changePage('results');
     }
-    toHome(){
+    toHome() {
         this.props.changePage("home");
     }
-    toPost(){
-        this.props.changePage("Post");
+    toPost() {
+        this.props.changePage("post");
     }
-    toAccount(){
+    toAccount() {
         this.props.changePage("account");
     }
 
