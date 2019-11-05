@@ -1,25 +1,29 @@
 //Import statements for each component.
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Topbar from './components/Topbar.jsx';
-import Categories from './components/Categories.jsx';
-import Homepage from './components/Homepage';
-import Supportbar from './components/Supportbar';
+import Supportbar from './components/Supportbar'
+import Main from './components/Main';
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 'home',
+    }
+  }
+  changePage(p) {
+    this.setState({
+      page: p,
+    })
+  }
 
-
-function App() {
-  return (
-    /*
-    * Topbar and Homepage are called in this manner to reduce LOC.
-    * Their code is located in the components folder.
-    */
-    <div className="App">
-            <Topbar/>
-            <Homepage/>
-            <Categories/>
-            <Supportbar/>
-    </div>
-  );
+  render() {
+      return (
+        <div>
+          <Topbar changePage={this.changePage.bind(this)} />
+          <Main changePage={this.changePage.bind(this)} page={this.state.page}/>
+          <Supportbar changePage={this.changePage.bind(this)}/>
+        </div>
+      )
+  }
 }
-
-export default App;
