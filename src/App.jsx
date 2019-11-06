@@ -1,10 +1,16 @@
 //Import statements for each component.
 import React, { Component } from 'react';
 import './App.css';
+import Amplify from 'aws-amplify';
+import aws_exports from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
 import Topbar from './components/Topbar.jsx';
 import Supportbar from './components/Supportbar'
 import Main from './components/Main';
-export default class App extends Component {
+Amplify.configure(aws_exports);
+
+class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -27,3 +33,4 @@ export default class App extends Component {
       )
   }
 }
+export default withAuthenticator(App, {includeGreetings: false});
