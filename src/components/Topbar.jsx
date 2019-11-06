@@ -53,7 +53,7 @@ export default class Topbar extends Component {
                         using the search function written above, and binding search to this
                         is an syntax requirement for javascript to know when to call the function.
                          */}
-                        <Button variant="outline-success" onClick={this.search.bind(this)}>Search</Button>
+                        <Button variant="outline-info" onClick={this.search.bind(this)}>Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>

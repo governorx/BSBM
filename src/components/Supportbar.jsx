@@ -1,7 +1,8 @@
 // Imports
 import React, { Component } from 'react'; // Import neccesary for all components
 // react-bootstrap was imported to make it easier to make flexible GUI components see https://react-bootstrap.github.io
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import Amplify, {Auth} from 'aws-amplify';
 export default class Topbar extends Component {
     toContact(){
         this.props.changePage("contact");
@@ -22,6 +23,7 @@ export default class Topbar extends Component {
                     <Nav.Link onClick={this.toPolicy.bind(this)}>Policy</Nav.Link>
                     <Nav.Link onClick={this.toAbout.bind(this)}>About</Nav.Link>
                 </Nav>
+                <Button variant="outline-info" onClick={Auth.signOut.bind(this)}>Logout</Button>
             </Navbar>
         );
     }
