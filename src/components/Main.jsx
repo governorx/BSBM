@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Categories from './Categories';
 import Banner from './Banner';
+import PostForm from './PostForm';
 import '../App.css';
 export default class Main extends Component {
 
@@ -27,7 +28,7 @@ export default class Main extends Component {
             case 'post':
                 return (
                     <div>
-                        {/** TODO: Add content for post pages */}
+                        <PostForm/>
                     </div>
                 )
             case 'account':
