@@ -8,7 +8,6 @@ export default class Main extends Component {
     render() {
         /** props is a store of all of he variables and 
         functions passed from the parent component */
-        console.log(this.props.page);
         switch (this.props.page) {
             case 'home':
                 return (

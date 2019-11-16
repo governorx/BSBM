@@ -108,8 +108,8 @@
 				"Runtime": "nodejs8.10",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-bsbm-bluemarket-171816-deployment",
-					"S3Key": "amplify-builds/bsbm533a72fc533a72fcPreSignup-7736486666787875764a-build.zip"
+					"S3Bucket": "amplify-bsbm-prod-211539-deployment",
+					"S3Key": "amplify-builds/bsbm533a72fc533a72fcPreSignup-30386e695833496d4f75-build.zip"
 				}
 			}
 		},

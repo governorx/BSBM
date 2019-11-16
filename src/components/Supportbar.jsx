@@ -13,6 +13,9 @@ export default class Topbar extends Component {
     toAbout() {
         this.props.changePage("about");
     }
+    Logout() {
+        Auth.signOut()
+    }
     render() {
         // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
         return (
@@ -23,7 +26,7 @@ export default class Topbar extends Component {
                     <Nav.Link onClick={this.toPolicy.bind(this)}>Policy</Nav.Link>
                     <Nav.Link onClick={this.toAbout.bind(this)}>About</Nav.Link>
                 </Nav>
-                <Button variant="outline-info" onClick={Auth.signOut.bind(this)}>Logout</Button>
+                <Button variant="outline-info" onClick={this.Logout.bind(this)}>Logout</Button>
             </Navbar>
         );
     }
