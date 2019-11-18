@@ -50,6 +50,7 @@ export default class Main extends Component {
             case 'policy':
                 return (
                     <div>
+                        <Policy/>
                         {/** TODO: Add content for policy */}
                     </div>
                 )
