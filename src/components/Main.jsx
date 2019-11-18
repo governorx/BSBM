@@ -47,7 +47,7 @@ export default class Main extends Component {
                         {/** TODO: Add content for about pages */}
                     </div>
                 )
-            case 'policy':
+            case 'privacy policy':
                 return (
                     <div>
                         <Policy/>
@@ -55,6 +55,12 @@ export default class Main extends Component {
                     </div>
                 )
 
+            case 'terms of use':
+                    return (
+                        <div>
+                            {/** TODO: Add content for policy */}
+                        </div>
+                    )
             default:
                 return (
                     <div>
