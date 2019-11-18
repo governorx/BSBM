@@ -6,7 +6,7 @@
 .Banner .image {
     height: 100%;
     width: 100%;
-    filter: brightness(40%) blur(3px) contrast(90%);
+    filter: brightness(90%) blur(2px) contrast(90%);
 }
 
 .Banner .text {
@@ -15,31 +15,38 @@
     height: 100%;
     top: 15vw;
     text-align: center;
-    font: bolder 8vw sans-serif;
+    font: bolder 8vw arial sans-serif;
     color: white;
 }
 
-.App-link {
-    color: #09d3ac;
+.Category-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.Category-row {
+    display: flex;
+    flex-direction: row;
 }
 
-/* Create two equal columns that sits next to each other */
-
-/* Create two equal columns that floats next to each other */
-
-.column {
+.Category-image {
     float: left;
-    width: 33.3vw;
-    height: 66.6vw;
+    position: relative;
+    height: 47vh;
+    width: 50vw;
+    object-fit: fill;
+    align-items: center;
+    filter: brightness(50%) blur(1px) contrast(100%);
+    padding: 0.35%;
 }
+ .Category-text {
+    position: absolute;
+    font: bold 4vw arial sans-serif;
+    color: whitesmoke; 
+    display: flex;
+ }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-.category-box {
-    width: 33.3vw;
-    height: 33.3vw;
-}
+
+
