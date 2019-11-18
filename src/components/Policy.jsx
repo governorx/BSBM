@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Documnet, Page } from 'react-pdf';
-import privacypolicy from "../Documents/privacypolicy"
+import { Document, Page } from 'react-pdf';
+import privacypolicy from "../Documents/PrivacyPolicy.pdf"
 import '../App.css';
 export default class Policy extends Component {
     state = {
@@ -16,7 +16,7 @@ export default class Policy extends Component {
         const { pageNumber, numPages } = this.state;
         return (
         <div>
-            <Document file="privacypolicy" 
+            <Document file= {privacypolicy} 
             onLoadSuccess={this.onDocumentLoadSuccess}
             >
                 <Page pageNumber = {pageNumber}/>
