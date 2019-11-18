@@ -65,12 +65,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"bsbm533a72fc533a72fcPreSignup",
+						"bsbm79e7d0db79e7d0dbPreSignup",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"bsbm533a72fc533a72fcPreSignup",
+									"bsbm79e7d0db79e7d0dbPreSignup",
 									"-",
 									{
 										"Ref": "env"
@@ -108,8 +108,8 @@
 				"Runtime": "nodejs8.10",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-bsbm-bluemarket-171816-deployment",
-					"S3Key": "amplify-builds/bsbm533a72fc533a72fcPreSignup-386757344c6a6b695142-build.zip"
+					"S3Bucket": "amplify-bsbm-prod-160604-deployment",
+					"S3Key": "amplify-builds/bsbm79e7d0db79e7d0dbPreSignup-74542b3135785365426e-build.zip"
 				}
 			}
 		},
@@ -119,12 +119,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"bsbm533a72fc533a72fcPreSignup",
+						"bsbm79e7d0db79e7d0dbPreSignup",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"bsbm533a72fc533a72fcPreSignup",
+									"bsbm79e7d0db79e7d0dbPreSignup",
 									"-",
 									{
 										"Ref": "env"

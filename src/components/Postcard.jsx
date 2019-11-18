@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap'
 import '../App.css';
 import { Storage } from 'aws-amplify';
+// This page recieves a path to it's data from its parent, pulls it, and renders the post as a
 export default class Postcard extends Component {
     constructor(props) {
         super(props)

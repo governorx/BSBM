@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "bsbm533a72fc_identitypool_533a72fc",
+    "identityPoolName": "bsbm79e7d0db_identitypool_79e7d0db",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "bsbm53533a72fc",
-    "userPoolName": "bsbm533a72fc_userpool_533a72fc",
+    "resourceNameTruncated": "bsbm7979e7d0db",
+    "userPoolName": "bsbm79e7d0db_userpool_79e7d0db",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,14 +28,17 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "bsbm53533a72fc_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "bsbm7979e7d0db_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "useDefault": "manual",
     "authSelections": "identityPoolAndUserPool",
-    "resourceName": "bsbm533a72fc533a72fc",
+    "resourceName": "bsbm79e7d0db79e7d0db",
     "thirdPartyAuth": false,
+    "userPoolGroups": false,
+    "adminQueries": false,
     "triggers": "{\"PreSignup\":[\"email-filter-whitelist\"]}",
     "hostedUI": false,
+    "userPoolGroupList": [],
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -55,7 +58,7 @@
     "dependsOn": [
         {
             "category": "function",
-            "resourceName": "bsbm533a72fc533a72fcPreSignup",
+            "resourceName": "bsbm79e7d0db79e7d0dbPreSignup",
             "triggerProvider": "Cognito",
             "attributes": [
                 "Arn",

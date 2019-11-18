@@ -4,7 +4,6 @@ exports.handler = (event, context, callback) => {
 
   const { email } = event.request.userAttributes;
   const domain = email.substring(email.indexOf('@') + 1);
-  console.log(wld)
 
   if (!wld.includes(domain)) {
     callback(new Error(`Invalid email domain: ${domain}`), event);
