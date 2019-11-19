@@ -31,22 +31,24 @@
 }
 
 .Category-image {
-    float: left;
     position: relative;
+    margin: 0.3%;
     height: 47vh;
     width: 50vw;
-    object-fit: fill;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    filter: brightness(50%) blur(1px) contrast(100%);
-    padding: 0.35%;
+    overflow: hidden;
+}
+.category-image-sub {
+    object-fit: cover;
+    max-width: 150vh;
+    filter: brightness(50%) blur(2px) contrast(100%);
 }
  .Category-text {
+    float: left;
     position: absolute;
     font: bold 4vw arial sans-serif;
     color: whitesmoke; 
     display: flex;
  }
-
-
-
-

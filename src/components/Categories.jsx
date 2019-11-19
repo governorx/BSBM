@@ -15,8 +15,6 @@ export default class Categories extends Component {
     render() {
         return(
             <div class='Category-grid'>
-                <i class="fa fa-refresh" aria-hidden="true"></i>
-
                 <div class='Category-row'>
                     <Subcategories src={jobsearch} alt="jobs" title="Job Search" changePage={this.props.changePage.bind(this)}/>
                     <Subcategories src={clearance} alt="clearance" title="Clearance" changePage={this.props.changePage.bind(this)}/>
