@@ -43,6 +43,7 @@
 .category-image-sub {
     object-fit: cover;
     max-width: 150vh;
+    min-width: 100vw;
     filter: brightness(50%) blur(2px) contrast(100%);
 }
  .Category-text {
