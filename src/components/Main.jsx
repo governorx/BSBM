@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import Categories from './Categories';
 import Banner from './Banner';
+<<<<<<< HEAD
 import Aboutpage from './Aboutpage';
+=======
+import Policy from './Policy';
+import TermsOfUse from './TermsOfUse';
+>>>>>>> master
 import '../App.css';
 export default class Main extends Component {
 
@@ -52,10 +57,18 @@ export default class Main extends Component {
             case 'policy':
                 return (
                     <div>
+                        <Policy/>
                         {/** TODO: Add content for policy */}
                     </div>
                 )
 
+            case 'termsOfUse':
+                    return (
+                        <div>
+                            <TermsOfUse/>
+                            {/** TODO: Add content for policy */}
+                        </div>
+                    )
             default:
                 return (
                     <div>
