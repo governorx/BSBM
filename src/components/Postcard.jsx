@@ -72,7 +72,7 @@ export default class Postcard extends Component {
                     <Card.Body>
                         <Card.Title>{this.state.title}</Card.Title>
                         <Card.Text>{this.state.textContent}</Card.Text>
-                        <Button variant="primary" href={"mailto:" + this.state.email}> Connect! </Button>
+                        <Button variant="dark" href={"mailto:" + this.state.email}> Connect! </Button>
                     </Card.Body>
                 </Card>
             </div>

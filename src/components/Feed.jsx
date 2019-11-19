@@ -38,7 +38,7 @@ export default class Feed extends Component {
     render() {
         let posts = []
         this.state.posts.forEach(element => {
-            posts.push(<Postcard path={element} />)
+            posts.unshift(<Postcard path={element} />)
         });
         return (
             <div>

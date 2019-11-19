@@ -7,7 +7,6 @@ import { withAuthenticator } from 'aws-amplify-react';
 import Topbar from './components/Topbar.jsx';
 import Supportbar from './components/Supportbar'
 import Main from './components/Main';
-import Feed from './components/Feed'
 Amplify.configure(aws_exports);
 
 class App extends Component {
@@ -25,18 +24,17 @@ class App extends Component {
   }
 
   render() {
-      return (
-        <div>
-          <Topbar changePage={this.changePage.bind(this)} />
-          <Main changePage={this.changePage.bind(this)} page={this.state.page}/>
-          {/*
+    return (
+      <div>
+        <Topbar changePage={this.changePage.bind(this)} />
+        <Main changePage={this.changePage.bind(this)} page={this.state.page} />
+        {/*
           An example of the feed being implimented, category is test/clearance at 
           the moment, make a post using the form to see it populate after a refresh
           */}
-          <Feed category={'test/clearance'}/>
-          <Supportbar changePage={this.changePage.bind(this)}/>
-        </div>
-      )
+        <Supportbar changePage={this.changePage.bind(this)} />
+      </div>
+    )
   }
 }
-export default withAuthenticator(App, {includeGreetings: false});
+export default withAuthenticator(App, { includeGreetings: false });

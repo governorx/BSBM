@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Categories from './Categories';
 import Banner from './Banner';
 import PostForm from './PostForm';
+import Feed from './Feed';
 import '../App.css';
 export default class Main extends Component {
 
@@ -27,7 +28,7 @@ export default class Main extends Component {
             case 'post':
                 return (
                     <div>
-                        <PostForm/>
+                        <PostForm />
                     </div>
                 )
             case 'account':
@@ -54,7 +55,42 @@ export default class Main extends Component {
                         {/** TODO: Add content for policy */}
                     </div>
                 )
-
+            case 'jobs':
+                return (
+                    <div>
+                        <Feed category={'test/jobs'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
+            case 'clearance':
+                return (
+                    <div>
+                        <Feed category={'test/clearance'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
+            case 'housing':
+                return (
+                    <div>
+                        <Feed category={'test/housing'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
+            case 'furniture':
+                return (
+                    <div>
+                        <Feed category={'test/furniture'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
+            case 'academics':
+                return (
+                    <div>
+                        <Feed category={'test/academics'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
+            case 'community':
+                return (
+                    <div>
+                        <Feed category={'test/community'} changePage={this.props.changePage.bind(this)}/>
+                    </div>
+                )
             default:
                 return (
                     <div>
