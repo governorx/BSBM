@@ -14,16 +14,16 @@ export default class Categories extends Component {
     }
     render() {
         return(
-            <div class='Category-grid'>
-                <div class='Category-row'>
+            <div className='Category-grid'>
+                <div className='Category-row'>
                     <Subcategories src={jobsearch} alt="jobs" title="Job Search" changePage={this.props.changePage.bind(this)}/>
                     <Subcategories src={clearance} alt="clearance" title="Clearance" changePage={this.props.changePage.bind(this)}/>
                 </div>
-                <div class='Category-row'>
+                <div className='Category-row'>
                     <Subcategories src={housing} alt="housing" title="Housing" changePage={this.props.changePage.bind(this)}/>
                     <Subcategories src={furniture} alt="furniture" title="Furniture" changePage={this.props.changePage.bind(this)}/>
                 </div>
-                <div class='Category-row'>
+                <div className='Category-row'>
                     <Subcategories src={academics} alt="academics" title="Academics" changePage={this.props.changePage.bind(this)}/>
                     <Subcategories src={community} alt="community" title="Community" changePage={this.props.changePage.bind(this)}/>
                 </div>
