@@ -21,7 +21,7 @@ export default class Aboutpage extends Component {
                                 <div className="container">
                                     <h2>Ernest X. Horton </h2>
                                     <p className="title">Project Manager</p>
-                                    <p>Ernest Horton is a graduating senior Computer Science major from Pittsburg</p>
+                                    <p>Ernest Horton is a graduating senior Computer Science major from Pittsburgh</p>
                                     <p>ernest.horton@my.hamptonu.edu</p>
                                     <p><button className="button" href={"mailto:ernest.horton@my.hamptonu.edu"}> Contact </button></p>
                                 </div>
@@ -46,7 +46,7 @@ export default class Aboutpage extends Component {
                     <div className="container">
                         <h2>Christian J. Nichols </h2>
                         <p className="title">Chief Information Officer</p>
-                        <p>Christian Nichols is a graduating senior Computer Science Major from Hampton, Va</p>
+                        <p>Christian Nichols is a graduating senior Computer Science major from Hampton, Va</p>
                         <p>christian.nichols@my.hamptonu.edu</p>
                         <p><button className="button" href={"mailto:christian.nichols@my.hamptonu.edu"}> Contact </button></p>
                     </div>
@@ -86,7 +86,7 @@ export default class Aboutpage extends Component {
                     <div className="container">
                         <h2>Tauren L. Bass </h2>
                         <p className="title">Chief Technology Officer</p>
-                        <p>Tauren Bass is a graduating senior Computer Science Major from Philadelphia, PA</p>
+                        <p>Tauren Bass is a graduating senior Computer Science major from Philadelphia, PA</p>
                         <p>tauren.bass@my.hamptonu.edu</p>
                         <p><button className="button" href={"mailto:tauren.bass@my.hamptonu.edu"}> Contact </button></p>
                     </div>
