@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import Categories from './Categories';
 import Banner from './Banner';
-<<<<<<< HEAD
 import Aboutpage from './Aboutpage';
-=======
 import Policy from './Policy';
 import TermsOfUse from './TermsOfUse';
->>>>>>> master
 import '../App.css';
 export default class Main extends Component {
 
