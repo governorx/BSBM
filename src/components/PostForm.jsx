@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Auth, Storage } from 'aws-amplify';
+import Feed from './Feed'
+import '../App.css';
 // This form submits a user entered post into our db
 export default class PostForm extends Component {
     constructor(props) {
@@ -41,21 +43,29 @@ export default class PostForm extends Component {
              .catch(err => console.log("PUTFAIL", err));
         })
     }
+    toFeed(e){
+      this.props.changePage(e)
+    }
     // Renders form to get user input
     render() {
         return (
-            <div>
+            <div class='boxed'>
+            <h2>Submit a Post</h2>
                 <Form>
+                <div class='boxedL'>
                     <Form.Group controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" value={this.state.email} onChange={this.updateEmailState} />
                     </Form.Group>
+                </div>
+                <div class='boxedR'>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Title</Form.Label>
                         <Form.Control as="textarea" rows="1" value={this.state.title} onChange={this.updateTitleState} />
                     </Form.Group>
+                </div>
                     <Form.Group controlId="exampleForm.ControlSelect1">
-                        <Form.Label>select category</Form.Label>
+                        <Form.Label>Category</Form.Label>
                         <Form.Control as="select" value={this.state.category} onChange={this.updateCategoryState}>
                             <option >None</option>
                             <option value="clearance">Clearance</option>
@@ -70,7 +80,7 @@ export default class PostForm extends Component {
                         <Form.Label>Post</Form.Label>
                         <Form.Control as="textarea" rows="3" value={this.state.textContent} onChange={this.updateTextState} />
                     </Form.Group>
-                    <Button variant="primary" onClick={this.postValues}>Submit</Button>
+                    <Button variant="primary" class='postBtn' onClick={(event) => {this.postValues(); this.toFeed(this.state.category)}}>Submit</Button>
                 </Form>
             </div>
         )

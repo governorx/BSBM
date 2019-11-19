@@ -24,7 +24,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-  
+
 .Category-row {
     display: flex;
     flex-direction: row;
@@ -50,6 +50,40 @@
     float: left;
     position: absolute;
     font: bold 4vw arial sans-serif;
-    color: whitesmoke; 
+    color: whitesmoke;
     display: flex;
+ }
+
+ .category-box {
+     width: 33.3vw;
+     height: 33.3vw;
+ }
+
+ .boxedL {
+   float: left;
+   width: 49%;
+ }
+
+ .boxedR {
+   float: right;
+   width: 49%;
+ }
+
+.boxed{
+  /* border: 1px solid gray; */
+  padding: 1vw 2vw 1vw 2vw;
+  box-shadow: 1px 1px 5px grey;
+}
+ .postBox Button{
+   float: right;
+ }
+ .postBox {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   border-collapse: separate;
+   border-spacing: 5px;
+   align-self: flex-start;
+   float: left;
+   padding: 1vw 2vw 1vw 2vw;
  }
