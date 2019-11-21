@@ -3,6 +3,7 @@ import Categories from './Categories';
 import Banner from './Banner';
 import PostForm from './PostForm';
 import Feed from './Feed';
+import Aboutpage from './Aboutpage';
 import Policy from './Policy';
 import TermsOfUse from './TermsOfUse';
 import '../App.css';
@@ -48,6 +49,7 @@ export default class Main extends Component {
             case 'about':
                 return (
                     <div>
+                        <Aboutpage />
                         {/** TODO: Add content for about pages */}
                     </div>
                 )
