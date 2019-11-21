@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Aboutpage from './Aboutpage';
 import Policy from './Policy';
 import TermsOfUse from './TermsOfUse';
+import FAQs from './FAQs';
 import '../App.css';
 export default class Main extends Component {
 
@@ -30,6 +31,13 @@ export default class Main extends Component {
                 return (
                     <div>
                         {/** TODO: Add content for post pages */}
+                    </div>
+                )
+            case 'FAQs':
+                return (
+                    <div>
+                        <FAQs/>
+                     {/** TODO: Add content for Frequently Asked Questions page */}
                     </div>
                 )
             case 'about':
