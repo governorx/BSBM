@@ -37,7 +37,6 @@ export default class Main extends Component {
                 return (
                     <div>
                         <FAQs/>
-                     {/** TODO: Add content for Frequently Asked Questions page */}
                     </div>
                 )
             case 'about':
