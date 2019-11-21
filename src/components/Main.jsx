@@ -33,12 +33,6 @@ export default class Main extends Component {
                         {/** TODO: Add content for post pages */}
                     </div>
                 )
-            case 'account':
-                return (
-                    <div>
-                        {/** TODO: Add content for account pages */}
-                    </div>
-                )
             case 'FAQs':
                 return (
                     <div>
