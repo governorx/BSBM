@@ -44,7 +44,6 @@ export default class Topbar extends Component {
                     <Nav className="mr-auto">
                         <Nav.Link onClick={this.toHome.bind(this)}>Home</Nav.Link>
                         <Nav.Link onClick={this.toPost.bind(this)}>Post</Nav.Link>
-                        <Nav.Link onClick={this.toAccount.bind(this)}>Account Settings </Nav.Link>
 
                     </Nav>
                     <Form inline>

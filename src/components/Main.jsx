@@ -6,6 +6,7 @@ import Feed from './Feed';
 import Aboutpage from './Aboutpage';
 import Policy from './Policy';
 import TermsOfUse from './TermsOfUse';
+import FAQs from './FAQs';
 import '../App.css';
 export default class Main extends Component {
 
@@ -34,16 +35,10 @@ export default class Main extends Component {
                         <PostForm changePage={this.props.changePage.bind(this)}/>
                     </div>
                 )
-            case 'account':
+            case 'FAQs':
                 return (
                     <div>
-                        {/** TODO: Add content for account pages */}
-                    </div>
-                )
-            case 'contact':
-                return (
-                    <div>
-                        {/** TODO: Add content for contact pages */}
+                        <FAQs/>
                     </div>
                 )
             case 'about':
