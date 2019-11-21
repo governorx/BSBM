@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Auth, Storage } from 'aws-amplify';
-import Feed from './Feed'
 import '../App.css';
 // This form submits a user entered post into our db
 export default class PostForm extends Component {

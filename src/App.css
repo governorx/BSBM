@@ -55,7 +55,6 @@
  }
 
  .category-box {
-     overflow: hidden;
      width: 31.3vw;
      height: 33.3vw;
  }
@@ -112,8 +111,9 @@
   /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
-  
+
   /* Some left and right padding inside the container */
   .container {
     padding: 0 16px;
