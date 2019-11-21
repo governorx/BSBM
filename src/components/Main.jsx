@@ -3,6 +3,8 @@ import Categories from './Categories';
 import Banner from './Banner';
 import PostForm from './PostForm';
 import Feed from './Feed';
+import Policy from './Policy';
+import TermsOfUse from './TermsOfUse';
 import '../App.css';
 export default class Main extends Component {
 
@@ -52,7 +54,7 @@ export default class Main extends Component {
             case 'policy':
                 return (
                     <div>
-                        {/** TODO: Add content for policy */}
+                        <Policy/>
                     </div>
                 )
             case 'jobs':
@@ -91,6 +93,12 @@ export default class Main extends Component {
                         <Feed category={'test/community'} changePage={this.props.changePage.bind(this)}/>
                     </div>
                 )
+            case 'termsOfUse':
+                    return (
+                        <div>
+                            <TermsOfUse/>
+                        </div>
+                    )
             default:
                 return (
                     <div>
