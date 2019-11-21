@@ -3,8 +3,8 @@ import React, { Component } from 'react'; // Import neccesary for all components
 // react-bootstrap was imported to make it easier to make flexible GUI components see https://react-bootstrap.github.io
 import { Navbar, Nav } from 'react-bootstrap';
 export default class Topbar extends Component {
-    toContact(){
-        this.props.changePage("contact");
+    toFAQs(){
+        this.props.changePage("FAQs");
     }
     toPolicy(){
         this.props.changePage("policy");
@@ -21,7 +21,7 @@ export default class Topbar extends Component {
             <Navbar bg="light">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="mr-auto">
-                    <Nav.Link onClick={this.toContact.bind(this)}>Contact</Nav.Link>
+                    <Nav.Link onClick={this.toFAQs.bind(this)}>FAQs</Nav.Link>
                     <Nav.Link onClick={this.toPolicy.bind(this)}>Policy</Nav.Link>
                     <Nav.Link onClick={this.toTermsOfUse.bind(this)}>Terms of Use</Nav.Link>
                     <Nav.Link onClick={this.toAbout.bind(this)}>About</Nav.Link>
