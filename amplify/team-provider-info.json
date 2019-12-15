@@ -1,0 +1,24 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-bsbm-prod-160604-authRole",
+            "UnauthRoleArn": "arn:aws:iam::797491509632:role/amplify-bsbm-prod-160604-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::797491509632:role/amplify-bsbm-prod-160604-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-bsbm-prod-160604-deployment",
+            "UnauthRoleName": "amplify-bsbm-prod-160604-unauthRole",
+            "StackName": "amplify-bsbm-prod-160604",
+            "StackId": "arn:aws:cloudformation:us-east-1:797491509632:stack/amplify-bsbm-prod-160604/3d4aa7c0-0a47-11ea-851c-12c270bd7978"
+        },
+        "categories": {
+            "function": {
+                "bsbm79e7d0db79e7d0dbPreSignup": {
+                    "DOMAINWHITELIST": "my.hamptonu.edu, hamptonu.edu"
+                }
+            },
+            "auth": {
+                "bsbm79e7d0db79e7d0db": {}
+            }
+        }
+    }
+}

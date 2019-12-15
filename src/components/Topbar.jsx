@@ -38,7 +38,7 @@ export default class Topbar extends Component {
         // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
         return (
             <Navbar sticky="top" bg="light" expand="lg">
-                <Navbar.Brand href="#home">Blue Market</Navbar.Brand>
+                <Navbar.Brand onClick={this.toHome.bind(this)}>Blue Market</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -52,7 +52,7 @@ export default class Topbar extends Component {
                         using the search function written above, and binding search to this
                         is an syntax requirement for javascript to know when to call the function.
                          */}
-                        <Button variant="outline-success" onClick={this.search.bind(this)}>Search</Button>
+                        <Button variant="outline-info" onClick={this.search.bind(this)}>Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>

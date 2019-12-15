@@ -24,32 +24,69 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-  
+
 .Category-row {
     display: flex;
     flex-direction: row;
 }
 
 .Category-image {
-    float: left;
     position: relative;
+    margin: 0.3%;
     height: 47vh;
     width: 50vw;
-    object-fit: fill;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    filter: brightness(50%) blur(1px) contrast(100%);
-    padding: 0.35%;
+    overflow: hidden;
+}
+.category-image-sub {
+    object-fit: cover;
+    max-width: 150vh;
+    min-width: 100vw;
+    filter: brightness(50%) blur(2px) contrast(100%);
 }
  .Category-text {
+    float: left;
     position: absolute;
     font: bold 4vw arial sans-serif;
-    color: whitesmoke; 
+    color: whitesmoke;
     display: flex;
  }
 
+ .category-box {
+     width: 31.3vw;
+     height: 33.3vw;
+ }
 
+ .boxedL {
+   float: left;
+   width: 49%;
+ }
 
+ .boxedR {
+   float: right;
+   width: 49%;
+ }
 
+.boxed{
+  /* border: 1px solid gray; */
+  padding: 1vw 2vw 1vw 2vw;
+  box-shadow: 1px 1px 5px grey;
+}
+ .postBox Button{
+   float: right;
+ }
+ .postBox {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   border-collapse: separate;
+   border-spacing: 5px;
+   align-self: flex-start;
+   float: left;
+   padding: 1vw 2vw 1vw 2vw;
+ }
 .category-box {
     width: 33.3vw;
     height: 33.3vw;
@@ -74,8 +111,9 @@
   /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
-  
+
   /* Some left and right padding inside the container */
   .container {
     padding: 0 16px;

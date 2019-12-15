@@ -1,10 +1,16 @@
 //Import statements for each component.
 import React, { Component } from 'react';
 import './App.css';
+import Amplify from 'aws-amplify';
+import aws_exports from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
 import Topbar from './components/Topbar.jsx';
 import Supportbar from './components/Supportbar'
 import Main from './components/Main';
-export default class App extends Component {
+Amplify.configure(aws_exports);
+
+class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -18,12 +24,17 @@ export default class App extends Component {
   }
 
   render() {
-      return (
-        <div>
-          <Topbar changePage={this.changePage.bind(this)} />
-          <Main changePage={this.changePage.bind(this)} page={this.state.page}/>
-          <Supportbar changePage={this.changePage.bind(this)}/>
-        </div>
-      )
+    return (
+      <div>
+        <Topbar changePage={this.changePage.bind(this)} />
+        <Main changePage={this.changePage.bind(this)} page={this.state.page} />
+        {/*
+          An example of the feed being implimented, category is test/clearance at 
+          the moment, make a post using the form to see it populate after a refresh
+          */}
+        <Supportbar changePage={this.changePage.bind(this)} />
+      </div>
+    )
   }
 }
+export default withAuthenticator(App, { includeGreetings: false });

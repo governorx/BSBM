@@ -1,0 +1,32 @@
+{
+	"function": {
+		"bsbm79e7d0db79e7d0dbPreSignup": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		}
+	},
+	"auth": {
+		"bsbm79e7d0db79e7d0db": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "bsbm79e7d0db79e7d0dbPreSignup",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				}
+			]
+		}
+	},
+	"storage": {
+		"s357bc3ed1": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

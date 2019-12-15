@@ -1,12 +1,16 @@
 // Imports
 import React, { Component } from 'react'; // Import neccesary for all components
 // react-bootstrap was imported to make it easier to make flexible GUI components see https://react-bootstrap.github.io
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Auth } from 'aws-amplify';
 export default class Topbar extends Component {
+    toContact() {
+        this.props.changePage("contact");
+    }
     toFAQs(){
         this.props.changePage("FAQs");
     }
-    toPolicy(){
+    toPolicy() {
         this.props.changePage("policy");
     }
     toTermsOfUse(){
@@ -14,6 +18,9 @@ export default class Topbar extends Component {
     }
     toAbout(){
         this.props.changePage("about");
+    }
+    Logout() {
+        Auth.signOut()
     }
     render() {
         // Returns a nav bar design originated from https://react-bootstrap.github.io/components/navbar/.
@@ -26,6 +33,7 @@ export default class Topbar extends Component {
                     <Nav.Link onClick={this.toTermsOfUse.bind(this)}>Terms of Use</Nav.Link>
                     <Nav.Link onClick={this.toAbout.bind(this)}>About</Nav.Link>
                 </Nav>
+                <Button variant="outline-info" onClick={this.Logout.bind(this)}>Logout</Button>
             </Navbar>
         );
     }
